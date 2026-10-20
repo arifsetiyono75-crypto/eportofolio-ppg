@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Portofolio PPG – Beranda</title>
+  <meta name="description" content="E-Portofolio Mahasiswa PPG untuk Praktik Pengalaman Lapangan (PPL)" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Reading Progress Bar -->
+  <style>
+    #reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0;
+      background: var(--color-accent); z-index: 2000; transition: width .1s;
+    }
+  </style>
+</head>
+<body>
+<div id="reading-progress" role="progressbar" aria-label="Progress membaca"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" role="navigation" aria-label="Navigasi utama">
+  <div class="container">
+    <a href="index.html" class="nav-brand" aria-label="Beranda E-Portofolio PPG">
+      <div class="nav-brand-icon" aria-hidden="true">🎓</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-title">E-Portofolio PPG</span>
+        <span class="nav-brand-sub">Praktik Pengalaman Lapangan</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">Beranda</a></li>
+      <li role="none"><a href="profil.html" role="menuitem">Profil Guru</a></li>
+      <li role="none"><a href="perencanaan.html" role="menuitem">Perencanaan</a></li>
+      <li role="none"><a href="materi.html" role="menuitem">Materi</a></li>
+      <li role="none"><a href="media.html" role="menuitem">Media</a></li>
+      <li role="none"><a href="video.html" role="menuitem">Video</a></li>
+      <li role="none"><a href="nonmengajar.html" role="menuitem">Nonmengajar</a></li>
+      <li role="none"><a href="penilaian.html" role="menuitem">Penilaian</a></li>
+      <li role="none"><a href="refleksi.html" role="menuitem">Refleksi</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="dark-toggle" class="btn-dark-toggle" aria-label="Ganti tema gelap/terang" title="Ganti tema">🌙</button>
+      <button id="hamburger" class="hamburger" aria-label="Buka/tutup menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-layout">
+      <div class="hero-text">
+        <span class="hero-tag">📋 PPG Prajabatan · Semester 2 · 2026</span>
+        <h1 class="hero-title">
+          E-Portofolio <span>PPL 1</span><br>
+          Pendidikan Profesi Guru
+        </h1>
+        <p class="hero-subtitle">
+          Dokumentasi komprehensif praktik mengajar mandiri, analisis reflektif, dan pertumbuhan profesional selama pelaksanaan PPL di sekolah mitra.
+        </p>
+        <div class="hero-cta">
+          <a href="profil.html" class="btn btn-accent btn-lg">👤 Lihat Profil Guru</a>
+          <a href="#komponen" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,.5);">📚 Komponen Portofolio</a>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-num">6</div>
+            <div class="stat-label">Komponen Analisis</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">[ISI: Jumlah JP]</div>
+            <div class="stat-label">Jam Pelajaran Mengajar</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">[ISI: Jumlah Siswa]</div>
+            <div class="stat-label">Peserta Didik</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">[ISI: Minggu]</div>
+            <div class="stat-label">Minggu PPL</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar">
+          <img src="assets/img/foto-profil.jpg" alt="Foto profil [NAMA] mahasiswa PPG" onerror="this.parentElement.innerHTML='👨‍🏫'">
+        </div>
+        <div class="hero-avatar-name">[ISI: NAMA LENGKAP]</div>
+        <div class="hero-avatar-role">[ISI: BIDANG STUDI PPG]</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== INFO UTAMA ===== -->
+<section class="section-sm" style="background:var(--color-surface);border-bottom:1px solid var(--color-border);">
+  <div class="container">
+    <div style="display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;">
+      <div style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;">
+        <span>🏫</span><span><strong>Sekolah PPL:</strong> [ISI: NAMA SEKOLAH]</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;">
+        <span>📖</span><span><strong>Program Studi:</strong> [ISI: BIDANG STUDI]</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;">
+        <span>🎓</span><span><strong>Kelas/Fase:</strong> [ISI: KELAS/FASE]</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:.5rem;font-size:.85rem;">
+        <span>📅</span><span><strong>Tahun:</strong> 2026, Semester 2</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6 KOMPONEN ===== -->
+<section class="section" id="komponen">
+  <div class="container">
+    <h2 class="section-title fade-in">Enam Komponen E-Portofolio</h2>
+    <p class="section-subtitle fade-in">
+      Sesuai ketentuan mata kuliah PPL, portofolio ini memuat enam komponen analisis yang wajib diselesaikan. Klik setiap kartu untuk membuka halaman analisis mendalam.
+    </p>
+
+    <div class="comp-grid">
+
+      <!-- 1 -->
+      <a href="perencanaan.html" class="comp-card fade-in" style="--comp-color:#1A3557;--comp-color-lt:#e6edf4;">
+        <div class="comp-icon" aria-hidden="true">📋</div>
+        <div class="comp-num">Komponen 1</div>
+        <div class="comp-title">Analisis Perencanaan Pembelajaran</div>
+        <p class="comp-desc">Analisis produk rancangan/perencanaan pembelajaran (Modul Ajar/RPP) untuk praktik mengajar mandiri.</p>
+        <div class="comp-arrow">Buka halaman →</div>
+      </a>
+
+      <!-- 2 -->
+      <a href="materi.html" class="comp-card fade-in" style="--comp-color:#2a6aad;--comp-color-lt:#e3eef8;">
+        <div class="comp-icon" style="--comp-color-lt:#e3eef8;" aria-hidden="true">📚</div>
+        <div class="comp-num">Komponen 2</div>
+        <div class="comp-title">Analisis Materi Pembelajaran</div>
+        <p class="comp-desc">Analisis materi pembelajaran yang disusun dan diterapkan dalam praktik mengajar mandiri.</p>
+        <div class="comp-arrow">Buka halaman →</div>
+      </a>
+
+      <!-- 3 -->
+      <a href="media.html" class="comp-card fade-in" style="--comp-color:#0e7490;--comp-color-lt:#e0f4f8;">
+        <div class="comp-icon" style="--comp-color-lt:#e0f4f8;" aria-hidden="true">🖥️</div>
+        <div class="comp-num">Komponen 3</div>
+        <div class="comp-title">Analisis Media Pembelajaran</div>
+        <p class="comp-desc">Analisis media pembelajaran yang dipergunakan dalam praktik mengajar mandiri.</p>
+        <div class="comp-arrow">Buka halaman →</div>
+      </a>
+
+      <!-- 4 -->
+      <a href="video.html" class="comp-card fade-in" style="--comp-color:#7c3aed;--comp-color-lt:#ede9fb;">
+        <div class="comp-icon" style="--comp-color-lt:#ede9fb;" aria-hidden="true">🎥</div>
+        <div class="comp-num">Komponen 4</div>
+        <div class="comp-title">Analisis Video Praktik Mengajar</div>
+        <p class="comp-desc">Analisis video pelaksanaan praktik mengajar mandiri secara sistematik per menit dan per aspek.</p>
+        <div class="comp-arrow">Buka halaman →</div>
+      </a>
+
+      <!-- 5 -->
+      <a href="nonmengajar.html" class="comp-card fade-in" style="--comp-color:#059669;--comp-color-lt:#e0f5ee;">
+        <div class="comp-icon" style="--comp-color-lt:#e0f5ee;" aria-hidden="true">🤝</div>
+        <div class="comp-num">Komponen 5</div>
+        <div class="comp-title">Analisis Kegiatan Nonmengajar</div>
+        <p class="comp-desc">Dokumentasi dan analisis kegiatan nonmengajar: administrasi, ekstrakurikuler, rapat, pembinaan karakter.</p>
+        <div class="comp-arrow">Buka halaman →</div>
+      </a>
+
+      <!-- 6 -->
+      <a href="penilaian.html" class="comp-card fade-in" style="--comp-color:#d97706;--comp-color-lt:#fef3e0;">
+        <div class="comp-icon" style="--comp-color-lt:#fef3e0;" aria-hidden="true">📊</div>
+        <div class="comp-num">Komponen 6</div>
+        <div class="comp-title">Instrumen Penilaian & Analisis</div>
+        <p class="comp-desc">Instrumen penilaian yang dirancang beserta analisis validitas, kesesuaian indikator, dan tindak lanjut.</p>
+        <div class="comp-arrow">Buka halaman →</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== REFLEKSI CTA ===== -->
+<section class="section-sm" style="background:var(--color-surface-2);">
+  <div class="container">
+    <div class="highlight-box fade-in">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1.5rem;">
+        <div>
+          <h3 style="font-size:1.25rem;margin-bottom:.4rem;">🔍 Refleksi Diri Menyeluruh</h3>
+          <p>Laporan pertumbuhan profesional menggunakan Model Gibbs lengkap dengan timeline perkembangan dari awal hingga akhir PPL.</p>
+        </div>
+        <a href="refleksi.html" class="btn btn-accent">Baca Refleksi →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand-title">🎓 E-Portofolio PPG</div>
+        <p>Portofolio digital mahasiswa Pendidikan Profesi Guru untuk dokumentasi Praktik Pengalaman Lapangan.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Komponen Utama</h4>
+        <ul>
+          <li><a href="perencanaan.html">Perencanaan Pembelajaran</a></li>
+          <li><a href="materi.html">Materi Pembelajaran</a></li>
+          <li><a href="media.html">Media Pembelajaran</a></li>
+          <li><a href="video.html">Video Praktik Mengajar</a></li>
+          <li><a href="nonmengajar.html">Kegiatan Nonmengajar</a></li>
+          <li><a href="penilaian.html">Instrumen Penilaian</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informasi</h4>
+        <ul>
+          <li><a href="profil.html">Profil Guru</a></li>
+          <li><a href="refleksi.html">Refleksi Diri</a></li>
+          <li><a href="index.html">Beranda</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year"></span> E-Portofolio PPG · [ISI: NAMA] · Dibuat dengan ❤️ untuk Program PPG</span>
+      <span>Semester 2 · 2026</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Kembali ke atas">↑</button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

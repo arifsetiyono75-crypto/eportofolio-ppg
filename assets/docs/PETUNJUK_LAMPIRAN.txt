@@ -1,0 +1,9 @@
+Ini adalah folder untuk menyimpan dokumen lampiran portofolio, seperti:
+- modul-ajar.pdf
+- bahan-ajar.pdf
+- lkpd.pdf
+- instrumen-penilaian.pdf
+- rekap-nilai.pdf
+- log-kegiatan-nonmengajar.pdf
+
+Silakan letakkan file-file PDF Anda di folder ini sesuai dengan tautan unduhan yang ada pada setiap halaman HTML.

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil Guru – E-Portofolio PPG</title>
+  <meta name="description" content="Profil lengkap mahasiswa PPG: visi mengajar, riwayat pendidikan, kompetensi, dan kontak." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>#reading-progress{position:fixed;top:0;left:0;height:3px;width:0;background:var(--color-accent);z-index:2000;}</style>
+</head>
+<body>
+<div id="reading-progress"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" role="navigation" aria-label="Navigasi utama">
+  <div class="container">
+    <a href="index.html" class="nav-brand" aria-label="Beranda E-Portofolio PPG">
+      <div class="nav-brand-icon" aria-hidden="true">🎓</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-title">E-Portofolio PPG</span>
+        <span class="nav-brand-sub">Praktik Pengalaman Lapangan</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">Beranda</a></li>
+      <li role="none"><a href="profil.html" role="menuitem">Profil Guru</a></li>
+      <li role="none"><a href="perencanaan.html" role="menuitem">Perencanaan</a></li>
+      <li role="none"><a href="materi.html" role="menuitem">Materi</a></li>
+      <li role="none"><a href="media.html" role="menuitem">Media</a></li>
+      <li role="none"><a href="video.html" role="menuitem">Video</a></li>
+      <li role="none"><a href="nonmengajar.html" role="menuitem">Nonmengajar</a></li>
+      <li role="none"><a href="penilaian.html" role="menuitem">Penilaian</a></li>
+      <li role="none"><a href="refleksi.html" role="menuitem">Refleksi</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="dark-toggle" class="btn-dark-toggle" aria-label="Ganti tema">🌙</button>
+      <button id="hamburger" class="hamburger" aria-label="Buka/tutup menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="index.html">🏠 Beranda</a></li>
+      <li aria-current="page">Profil Guru</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- PROFIL HERO -->
+<header class="profil-hero">
+  <div class="container">
+    <div class="profil-card">
+      <div class="profil-avatar-wrap">
+        <img src="assets/img/foto-profil.jpg" alt="Foto profil [ISI: NAMA LENGKAP]" onerror="this.parentElement.innerHTML='👨‍🏫'">
+      </div>
+      <div class="profil-info">
+        <div class="badge" style="margin-bottom:.6rem;">Mahasiswa PPG Prajabatan</div>
+        <h1>[ISI: NAMA LENGKAP]</h1>
+        <p class="profil-role">[ISI: BIDANG STUDI PPG]</p>
+        <div class="profil-meta">
+          <span class="profil-meta-item">🎓 NIM: [ISI: NIM/NPPPG]</span>
+          <span class="profil-meta-item">🏫 [ISI: NAMA SEKOLAH PPL]</span>
+          <span class="profil-meta-item">📚 Kelas [ISI: KELAS/FASE]</span>
+          <span class="profil-meta-item">📅 Semester 2 · 2026</span>
+          <span class="profil-meta-item">✉️ [ISI: EMAIL]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main id="main-content">
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:2fr 1fr;gap:2.5rem;align-items:start;" class="profil-layout">
+
+        <!-- Kolom Kiri -->
+        <div>
+
+          <!-- Visi / Filosofi -->
+          <div class="analysis-step fade-in">
+            <div class="analysis-step-header">
+              <div class="step-number">★</div>
+              <h2>Visi & Filosofi Mengajar</h2>
+            </div>
+            <div class="analysis-step-body">
+              <div class="placeholder-box">
+                <p>[ISI: Tuliskan visi mengajar Anda dalam 3–5 kalimat. Contoh: Anda percaya pada pendekatan apa dalam mengajar? Bagaimana pandangan Anda tentang peran guru? Apa yang Anda harapkan untuk peserta didik?]</p>
+              </div>
+              <div class="example-box">
+                <p>Saya meyakini bahwa setiap peserta didik membawa potensi unik yang perlu difasilitasi, bukan sekadar diisi. Sebagai pendidik, saya berkomitmen untuk menciptakan ruang belajar yang aman, inklusif, dan menantang secara intelektual — di mana rasa ingin tahu dirayakan dan kesalahan dipandang sebagai bagian dari proses belajar. Saya berpijak pada prinsip diferensiasi instruksi untuk memastikan setiap anak mendapat pengalaman belajar yang bermakna sesuai kebutuhan dan gaya belajarnya.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Riwayat Pendidikan -->
+          <div class="analysis-step fade-in">
+            <div class="analysis-step-header">
+              <div class="step-number">📖</div>
+              <h2>Riwayat Pendidikan</h2>
+            </div>
+            <div class="analysis-step-body">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">[ISI: Tahun Masuk] – [ISI: Tahun Lulus]</div>
+                  <div class="timeline-title">[ISI: Nama Perguruan Tinggi] · S1 [ISI: Program Studi]</div>
+                  <div class="timeline-body"><p>[ISI: Keterangan singkat, judul skripsi, atau pencapaian selama studi S1]</p></div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2026</div>
+                  <div class="timeline-title">PPG Prajabatan · [ISI: BIDANG STUDI]</div>
+                  <div class="timeline-body"><p>Program Pendidikan Profesi Guru Prajabatan Semester 2 di [ISI: Nama Institusi PPG]</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pengalaman PPL -->
+          <div class="analysis-step fade-in">
+            <div class="analysis-step-header">
+              <div class="step-number">🏫</div>
+              <h2>Pengalaman Praktik PPL</h2>
+            </div>
+            <div class="analysis-step-body">
+              <div class="placeholder-box">
+                <p>[ISI: Deskripsikan pengalaman PPL Anda: di sekolah apa, kelas berapa, berapa lama, kegiatan utama apa yang dilakukan.]</p>
+              </div>
+              <div class="table-wrap">
+                <table>
+                  <caption class="sr-only">Data PPL</caption>
+                  <tbody>
+                    <tr><th style="width:35%">Sekolah Mitra</th><td>[ISI: NAMA SEKOLAH]</td></tr>
+                    <tr><th>Kelas / Fase</th><td>[ISI: KELAS/FASE]</td></tr>
+                    <tr><th>Dosen Pembimbing</th><td>[ISI: NAMA DOSEN PEMBIMBING]</td></tr>
+                    <tr><th>Guru Pembimbing</th><td>[ISI: NAMA GURU PEMBIMBING]</td></tr>
+                    <tr><th>Periode PPL</th><td>[ISI: Tanggal Mulai] – [ISI: Tanggal Selesai]</td></tr>
+                    <tr><th>Total JP Mengajar</th><td>[ISI: Jumlah JP] JP</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Kolom Kanan -->
+        <div>
+
+          <!-- Kompetensi -->
+          <div class="card fade-in" style="margin-bottom:1.5rem;">
+            <div class="card-header">💡 Kompetensi & Keahlian</div>
+            <div class="card-body">
+              <p style="font-size:.82rem;color:var(--color-text-muted);margin-bottom:1rem;">[ISI: Sesuaikan nilai persentase bar sesuai penilaian diri Anda]</p>
+
+              <div class="skill-bar">
+                <div class="skill-bar-label"><span>Perencanaan Pembelajaran</span><span>–%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="[ISI: misal 80%]" style="width:0%"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label"><span>Pengelolaan Kelas</span><span>–%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="[ISI: misal 75%]" style="width:0%"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label"><span>Penggunaan Media Digital</span><span>–%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="[ISI: misal 85%]" style="width:0%"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label"><span>Asesmen & Penilaian</span><span>–%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="[ISI: misal 70%]" style="width:0%"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label"><span>Komunikasi Pedagogis</span><span>–%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="[ISI: misal 78%]" style="width:0%"></div></div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-label"><span>Refleksi & Pengembangan Diri</span><span>–%</span></div>
+                <div class="skill-bar-track"><div class="skill-bar-fill" data-width="[ISI: misal 82%]" style="width:0%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kontak -->
+          <div class="card fade-in">
+            <div class="card-header">📬 Kontak & Tautan</div>
+            <div class="card-body">
+              <ul style="list-style:none;padding:0;">
+                <li style="padding:.5rem 0;border-bottom:1px solid var(--color-border);font-size:.88rem;">
+                  ✉️ <strong>Email:</strong> <a href="mailto:[ISI: EMAIL]">[ISI: EMAIL]</a>
+                </li>
+                <li style="padding:.5rem 0;border-bottom:1px solid var(--color-border);font-size:.88rem;">
+                  📱 <strong>Telepon/WA:</strong> [ISI: NOMOR WA]
+                </li>
+                <li style="padding:.5rem 0;border-bottom:1px solid var(--color-border);font-size:.88rem;">
+                  🌐 <strong>Institusi PPG:</strong> [ISI: NAMA INSTITUSI]
+                </li>
+                <li style="padding:.5rem 0;font-size:.88rem;">
+                  📍 <strong>Kota:</strong> [ISI: KOTA]
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- STYLE RESPONSIVE -->
+      <style>
+        @media (max-width:768px) {
+          .profil-layout { grid-template-columns: 1fr !important; }
+        }
+      </style>
+
+      <!-- Prev/Next -->
+      <nav class="page-nav" aria-label="Navigasi halaman">
+        <a href="index.html" class="nav-prev">
+          <span>←</span>
+          <span><span class="nav-label">Sebelumnya</span>Beranda</span>
+        </a>
+        <a href="perencanaan.html" class="nav-next">
+          <span><span class="nav-label">Selanjutnya</span>Perencanaan Pembelajaran</span>
+          <span>→</span>
+        </a>
+      </nav>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand-title">🎓 E-Portofolio PPG</div>
+        <p>Portofolio digital mahasiswa PPG untuk dokumentasi PPL.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Komponen</h4>
+        <ul>
+          <li><a href="perencanaan.html">Perencanaan</a></li>
+          <li><a href="materi.html">Materi</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="video.html">Video</a></li>
+          <li><a href="nonmengajar.html">Nonmengajar</a></li>
+          <li><a href="penilaian.html">Penilaian</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Halaman Lain</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="refleksi.html">Refleksi Diri</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year"></span> E-Portofolio PPG · [ISI: NAMA]</span>
+      <span>Semester 2 · 2026</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Kembali ke atas">↑</button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

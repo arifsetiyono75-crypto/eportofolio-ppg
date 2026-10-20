@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analisis Video Praktik Mengajar – E-Portofolio PPG</title>
+  <meta name="description" content="Komponen 4: Analisis sistematik rekaman video praktik mengajar mandiri per aspek dan per menit kegiatan." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    #reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; width: 0;
+      background: var(--color-accent); z-index: 2000; transition: width .1s;
+    }
+    /* Aspect card grid untuk Section D */
+    .aspect-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+    .aspect-card {
+      background: var(--color-surface);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      padding: 1.25rem;
+      box-shadow: var(--shadow-sm);
+      border-top: 4px solid var(--color-primary-lt);
+    }
+    .aspect-card-header {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: .75rem;
+    }
+    .aspect-card-icon {
+      font-size: 1.4rem;
+    }
+    .aspect-card-title {
+      font-family: var(--font-head);
+      font-weight: 600;
+      font-size: .92rem;
+      color: var(--color-primary);
+    }
+    [data-theme="dark"] .aspect-card-title { color: var(--color-primary-lt); }
+    .aspect-score {
+      display: inline-block;
+      margin-top: .6rem;
+      padding: .2rem .7rem;
+      border-radius: 99px;
+      background: var(--color-surface-2);
+      border: 1px solid var(--color-border);
+      font-size: .75rem;
+      font-family: var(--font-head);
+      font-weight: 600;
+      color: var(--color-text-muted);
+    }
+  </style>
+</head>
+<body>
+<div id="reading-progress" role="progressbar" aria-label="Progress membaca"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" role="navigation" aria-label="Navigasi utama">
+  <div class="container">
+    <a href="index.html" class="nav-brand" aria-label="Beranda E-Portofolio PPG">
+      <div class="nav-brand-icon" aria-hidden="true">🎓</div>
+      <div class="nav-brand-text">
+        <span class="nav-brand-title">E-Portofolio PPG</span>
+        <span class="nav-brand-sub">Praktik Pengalaman Lapangan</span>
+      </div>
+    </a>
+    <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">Beranda</a></li>
+      <li role="none"><a href="profil.html" role="menuitem">Profil Guru</a></li>
+      <li role="none"><a href="perencanaan.html" role="menuitem">Perencanaan</a></li>
+      <li role="none"><a href="materi.html" role="menuitem">Materi</a></li>
+      <li role="none"><a href="media.html" role="menuitem">Media</a></li>
+      <li role="none"><a href="video.html" role="menuitem" class="active" aria-current="page">Video</a></li>
+      <li role="none"><a href="nonmengajar.html" role="menuitem">Nonmengajar</a></li>
+      <li role="none"><a href="penilaian.html" role="menuitem">Penilaian</a></li>
+      <li role="none"><a href="refleksi.html" role="menuitem">Refleksi</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="dark-toggle" class="btn-dark-toggle" aria-label="Ganti tema gelap/terang" title="Ganti tema">🌙</button>
+      <button id="hamburger" class="hamburger" aria-label="Buka/tutup menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== BREADCRUMB ===== -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="index.html">🏠 Beranda</a></li>
+      <li aria-current="page">Video Praktik Mengajar</li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<header class="page-hero">
+  <div class="container">
+    <div class="page-hero-badge">🎥 Komponen 4 dari 6</div>
+    <h1>Analisis Video Praktik Mengajar Mandiri</h1>
+    <p>Analisis sistematik rekaman video praktik mengajar mandiri: per aspek dan per menit kegiatan.</p>
+  </div>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main id="main-content">
+  <section class="section">
+    <div class="container">
+
+      <!-- ===== SECTION A – Video Pembelajaran ===== -->
+      <div class="analysis-step fade-in">
+        <div class="analysis-step-header">
+          <div class="step-number">A</div>
+          <h3>Video Pembelajaran</h3>
+        </div>
+        <div class="analysis-step-body">
+          <h4 style="margin-bottom:1rem;">🎥 Video Praktik Mengajar</h4>
+
+          <div class="video-container">
+            <iframe
+              src="[ISI: URL EMBED YOUTUBE ATAU GOOGLE DRIVE]"
+              title="Video Praktik Mengajar [ISI: NAMA]"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div class="info-box warning">
+            <div class="info-box-icon">⚠️</div>
+            <div class="info-box-content">
+              <strong>Cara Mengganti URL Video</strong>
+              <p>Ganti <code>[ISI: URL EMBED...]</code> dengan URL embed YouTube (format: <code>https://www.youtube.com/embed/VIDEO_ID</code>) atau Google Drive (format: <code>https://drive.google.com/file/d/FILE_ID/preview</code>)</p>
+            </div>
+          </div>
+
+          <div class="placeholder-box">
+            <p>[ISI: Judul video, durasi total, tanggal perekaman, kelas, mata pelajaran, kompetensi yang diobservasi dalam video ini]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION B – Deskripsi dan Konteks ===== -->
+      <div class="analysis-step fade-in">
+        <div class="analysis-step-header">
+          <div class="step-number">B</div>
+          <h3>Deskripsi dan Konteks</h3>
+        </div>
+        <div class="analysis-step-body">
+          <h4 style="margin-bottom:1rem;">📋 Deskripsi dan Konteks Pembelajaran</h4>
+
+          <div class="table-wrap" style="margin-bottom:1.25rem;">
+            <table>
+              <caption class="sr-only">Informasi umum video praktik mengajar</caption>
+              <tbody>
+                <tr>
+                  <th style="width:35%;">Judul Video</th>
+                  <td>[ISI: Judul video rekaman praktik mengajar]</td>
+                </tr>
+                <tr>
+                  <th>Durasi</th>
+                  <td>[ISI: Durasi total, mis. 45 menit]</td>
+                </tr>
+                <tr>
+                  <th>Tanggal Rekaman</th>
+                  <td>[ISI: Tanggal perekaman, mis. 10 Oktober 2026]</td>
+                </tr>
+                <tr>
+                  <th>Kelas / Fase</th>
+                  <td>[ISI: Kelas dan fase, mis. X / Fase E]</td>
+                </tr>
+                <tr>
+                  <th>Mata Pelajaran</th>
+                  <td>[ISI: Nama mata pelajaran]</td>
+                </tr>
+                <tr>
+                  <th>Jumlah Peserta Didik</th>
+                  <td>[ISI: Jumlah siswa yang hadir saat perekaman]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="placeholder-box">
+            <p>[ISI: Deskripsikan konteks dan latar belakang pembuatan video ini. Mengapa pertemuan ini dipilih untuk direkam? Apa topik/kompetensi yang sedang diajarkan? Bagaimana kondisi kelas dan situasi pembelajaran pada hari tersebut?]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION C – Analisis Per Menit ===== -->
+      <div class="analysis-step fade-in">
+        <div class="analysis-step-header">
+          <div class="step-number">C</div>
+          <h3>Analisis Per Menit</h3>
+        </div>
+        <div class="analysis-step-body">
+          <h4 style="margin-bottom:.75rem;">⏱️ Tabel Analisis Per Menit</h4>
+          <p style="font-size:.87rem;color:var(--color-text-muted);margin-bottom:1.25rem;">Isi tabel berikut berdasarkan penghentian video setiap 2–5 menit sekali. Catat kegiatan, analisis pedagogis, dan catatan perbaikan di setiap segmen.</p>
+
+          <div class="table-wrap">
+            <table>
+              <caption class="sr-only">Analisis video per segmen menit</caption>
+              <thead>
+                <tr>
+                  <th style="min-width:110px;">Menit ke-</th>
+                  <th style="min-width:150px;">Kegiatan</th>
+                  <th style="min-width:220px;">Deskripsi</th>
+                  <th style="min-width:220px;">Analisis</th>
+                  <th style="min-width:200px;">Catatan Perbaikan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>00:00 – 05:00</strong></td>
+                  <td>Pembukaan / Apersepsi</td>
+                  <td>[ISI: Deskripsi kegiatan pembukaan yang tampak di video]</td>
+                  <td>[ISI: Analisis pedagogis – bagaimana guru membuka pelajaran, memotivasi siswa, dll.]</td>
+                  <td>[ISI: Hal yang perlu diperbaiki pada momen pembukaan]</td>
+                </tr>
+                <tr>
+                  <td><strong>05:01 – 10:00</strong></td>
+                  <td>[ISI: Kegiatan]</td>
+                  <td>[ISI: Deskripsi kegiatan]</td>
+                  <td>[ISI: Analisis]</td>
+                  <td>[ISI: Catatan Perbaikan]</td>
+                </tr>
+                <tr>
+                  <td><strong>10:01 – 15:00</strong></td>
+                  <td>[ISI: Kegiatan]</td>
+                  <td>[ISI: Deskripsi kegiatan]</td>
+                  <td>[ISI: Analisis]</td>
+                  <td>[ISI: Catatan Perbaikan]</td>
+                </tr>
+                <tr>
+                  <td><strong>15:01 – 20:00</strong></td>
+                  <td>[ISI: Kegiatan]</td>
+                  <td>[ISI: Deskripsi kegiatan]</td>
+                  <td>[ISI: Analisis]</td>
+                  <td>[ISI: Catatan Perbaikan]</td>
+                </tr>
+                <tr>
+                  <td><strong>20:01 – 25:00</strong></td>
+                  <td>[ISI: Kegiatan]</td>
+                  <td>[ISI: Deskripsi kegiatan]</td>
+                  <td>[ISI: Analisis]</td>
+                  <td>[ISI: Catatan Perbaikan]</td>
+                </tr>
+                <tr>
+                  <td><strong>25:01 – 30:00</strong></td>
+                  <td>[ISI: Kegiatan]</td>
+                  <td>[ISI: Deskripsi kegiatan]</td>
+                  <td>[ISI: Analisis]</td>
+                  <td>[ISI: Catatan Perbaikan]</td>
+                </tr>
+                <tr>
+                  <td><strong>30:01 – 35:00</strong></td>
+                  <td>[ISI: Kegiatan]</td>
+                  <td>[ISI: Deskripsi kegiatan]</td>
+                  <td>[ISI: Analisis]</td>
+                  <td>[ISI: Catatan Perbaikan]</td>
+                </tr>
+                <tr>
+                  <td><strong>35:01 – Akhir</strong></td>
+                  <td>Penutup</td>
+                  <td>[ISI: Deskripsi kegiatan penutup yang tampak di video]</td>
+                  <td>[ISI: Analisis pedagogis – bagaimana guru menutup pelajaran, merangkum, dll.]</td>
+                  <td>[ISI: Hal yang perlu diperbaiki pada momen penutup]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION D – Analisis Per Aspek ===== -->
+      <div class="analysis-step fade-in">
+        <div class="analysis-step-header">
+          <div class="step-number">D</div>
+          <h3>Analisis Per Aspek</h3>
+        </div>
+        <div class="analysis-step-body">
+          <h4 style="margin-bottom:1rem;">🔍 Analisis Per Aspek Pembelajaran</h4>
+          <p style="font-size:.87rem;color:var(--color-text-muted);margin-bottom:1.25rem;">Setiap aspek dianalisis berdasarkan pengamatan menyeluruh terhadap rekaman video. Berikan penilaian kualitatif dan deskripsi singkat yang didukung oleh bukti konkret dari video.</p>
+
+          <div class="aspect-grid">
+
+            <!-- Aspek 1 -->
+            <div class="aspect-card">
+              <div class="aspect-card-header">
+                <span class="aspect-card-icon">🌅</span>
+                <span class="aspect-card-title">Pembukaan &amp; Apersepsi</span>
+              </div>
+              <div class="placeholder-box" style="margin-bottom:.6rem;">
+                <p>[ISI: Analisis aspek pembukaan dan apersepsi: seberapa efektif guru membuka pelajaran, membangun koneksi dengan pengetahuan awal siswa, dan memotivasi peserta didik?]</p>
+              </div>
+              <span class="aspect-score">Nilai: [ISI: Baik / Cukup / Perlu Perbaikan]</span>
+            </div>
+
+            <!-- Aspek 2 -->
+            <div class="aspect-card">
+              <div class="aspect-card-header">
+                <span class="aspect-card-icon">⚡</span>
+                <span class="aspect-card-title">Kegiatan Inti</span>
+              </div>
+              <div class="placeholder-box" style="margin-bottom:.6rem;">
+                <p>[ISI: Analisis kegiatan inti: urutan kegiatan, strategi/model pembelajaran yang diterapkan, penggunaan waktu, diferensiasi instruksi, dan keaktifan peserta didik.]</p>
+              </div>
+              <span class="aspect-score">Nilai: [ISI: Baik / Cukup / Perlu Perbaikan]</span>
+            </div>
+
+            <!-- Aspek 3 -->
+            <div class="aspect-card">
+              <div class="aspect-card-header">
+                <span class="aspect-card-icon">🎯</span>
+                <span class="aspect-card-title">Penutup &amp; Kesimpulan</span>
+              </div>
+              <div class="placeholder-box" style="margin-bottom:.6rem;">
+                <p>[ISI: Analisis kegiatan penutup: bagaimana guru merangkum pembelajaran, mengecek pemahaman, memberikan refleksi, dan menyampaikan tindak lanjut kepada siswa.]</p>
+              </div>
+              <span class="aspect-score">Nilai: [ISI: Baik / Cukup / Perlu Perbaikan]</span>
+            </div>
+
+            <!-- Aspek 4 -->
+            <div class="aspect-card">
+              <div class="aspect-card-header">
+                <span class="aspect-card-icon">🤝</span>
+                <span class="aspect-card-title">Interaksi &amp; Keterlibatan Siswa</span>
+              </div>
+              <div class="placeholder-box" style="margin-bottom:.6rem;">
+                <p>[ISI: Analisis pola interaksi guru-siswa dan siswa-siswa. Seberapa aktif siswa terlibat? Jenis pertanyaan yang diajukan guru? Bagaimana respons siswa secara keseluruhan?]</p>
+              </div>
+              <span class="aspect-score">Nilai: [ISI: Baik / Cukup / Perlu Perbaikan]</span>
+            </div>
+
+            <!-- Aspek 5 -->
+            <div class="aspect-card">
+              <div class="aspect-card-header">
+                <span class="aspect-card-icon">🏛️</span>
+                <span class="aspect-card-title">Pengelolaan Kelas</span>
+              </div>
+              <div class="placeholder-box" style="margin-bottom:.6rem;">
+                <p>[ISI: Analisis pengelolaan kelas: pengaturan waktu, tata ruang, penanganan perilaku siswa, transisi antar kegiatan, dan iklim kelas yang tercipta selama pembelajaran.]</p>
+              </div>
+              <span class="aspect-score">Nilai: [ISI: Baik / Cukup / Perlu Perbaikan]</span>
+            </div>
+
+            <!-- Aspek 6 -->
+            <div class="aspect-card">
+              <div class="aspect-card-header">
+                <span class="aspect-card-icon">🖥️</span>
+                <span class="aspect-card-title">Penggunaan Media</span>
+              </div>
+              <div class="placeholder-box" style="margin-bottom:.6rem;">
+                <p>[ISI: Analisis penggunaan media selama pembelajaran di video: ketepatan, kemudahan penggunaan, respons siswa, dan kontribusi media terhadap pencapaian tujuan pembelajaran.]</p>
+              </div>
+              <span class="aspect-score">Nilai: [ISI: Baik / Cukup / Perlu Perbaikan]</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION E – Kekuatan dan Kelemahan ===== -->
+      <div class="analysis-step fade-in">
+        <div class="analysis-step-header">
+          <div class="step-number">E</div>
+          <h3>Kekuatan dan Kelemahan dari Video</h3>
+        </div>
+        <div class="analysis-step-body">
+          <h4 style="margin-bottom:1rem;">⚖️ Kekuatan dan Kelemahan Berdasarkan Pengamatan Video</h4>
+
+          <div class="strength-grid">
+            <div class="strength-box">
+              <h4>💪 Kekuatan yang Terlihat di Video</h4>
+              <ul class="checklist">
+                <li>[ISI: Kekuatan 1 yang terlihat dalam rekaman video]</li>
+                <li>[ISI: Kekuatan 2 yang terlihat dalam rekaman video]</li>
+                <li>[ISI: Kekuatan 3 yang terlihat dalam rekaman video]</li>
+                <li>[ISI: Kekuatan 4 yang terlihat dalam rekaman video]</li>
+              </ul>
+            </div>
+            <div class="strength-box">
+              <h4>🔧 Kelemahan yang Perlu Diperbaiki</h4>
+              <ul style="list-style:none;padding:0;">
+                <li style="padding:.5rem 0;border-bottom:1px solid var(--color-border);font-size:.9rem;display:flex;gap:.5rem;"><span style="color:var(--color-danger);font-weight:700;">✗</span>[ISI: Kelemahan 1 yang terlihat dalam rekaman video]</li>
+                <li style="padding:.5rem 0;border-bottom:1px solid var(--color-border);font-size:.9rem;display:flex;gap:.5rem;"><span style="color:var(--color-danger);font-weight:700;">✗</span>[ISI: Kelemahan 2 yang terlihat dalam rekaman video]</li>
+                <li style="padding:.5rem 0;border-bottom:1px solid var(--color-border);font-size:.9rem;display:flex;gap:.5rem;"><span style="color:var(--color-danger);font-weight:700;">✗</span>[ISI: Kelemahan 3 yang terlihat dalam rekaman video]</li>
+                <li style="padding:.5rem 0;font-size:.9rem;display:flex;gap:.5rem;"><span style="color:var(--color-danger);font-weight:700;">✗</span>[ISI: Kelemahan 4 yang terlihat dalam rekaman video]</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="example-box">
+            <p>Melalui pengamatan video pada menit 12:35–18:10, terlihat bahwa interaksi guru-siswa terbangun dengan sangat natural. Guru menggunakan teknik wait time (jeda 5–7 detik setelah pertanyaan) yang secara konsisten mendorong lebih banyak siswa untuk angkat tangan — dari rata-rata 4 tangan menjadi 9–11 tangan per pertanyaan. Namun, analisis video juga mengungkap pola yang kurang ideal: pertanyaan cenderung diarahkan hanya kepada siswa yang duduk di baris depan. Di menit 27:14, tampak 6 siswa di barisan belakang tidak mendapat kesempatan berbicara sama sekali selama 30 menit pertama pembelajaran, yang menandakan perlunya strategi cold-calling atau talking stick untuk distribusi partisipasi yang lebih merata.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION F – Refleksi Berdasarkan Video ===== -->
+      <div class="analysis-step fade-in">
+        <div class="analysis-step-header">
+          <div class="step-number">F</div>
+          <h3>Refleksi Berdasarkan Video</h3>
+        </div>
+        <div class="analysis-step-body">
+          <h4 style="margin-bottom:1rem;">💡 Refleksi Berdasarkan Pengamatan Video</h4>
+
+          <div class="placeholder-box">
+            <p>[ISI: Apa yang Anda rasakan saat menonton kembali video mengajar Anda? Apa yang mengejutkan Anda — baik hal positif maupun negatif? Apakah ada kesenjangan antara apa yang Anda rasakan saat mengajar dengan apa yang tampak di video? Apa yang paling ingin segera Anda perbaiki setelah menonton video ini?]</p>
+          </div>
+
+          <div class="placeholder-box">
+            <p>[ISI: Rencana perbaikan konkret berdasarkan temuan dari video. Tuliskan 3–5 aksi spesifik yang akan Anda lakukan pada pertemuan berikutnya. Setiap aksi harus: (1) spesifik dan terukur, (2) realistis untuk dilaksanakan, (3) memiliki indikator keberhasilan yang jelas.]</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== SECTION G – Lampiran ===== -->
+      <div class="analysis-step fade-in">
+        <div class="analysis-step-header">
+          <div class="step-number">G</div>
+          <h3>Lampiran</h3>
+        </div>
+        <div class="analysis-step-body">
+          <h4 style="margin-bottom:1rem;">📎 Lampiran dan Unduhan</h4>
+          <p style="color:var(--color-text-muted);font-size:.88rem;margin-bottom:1.25rem;">Unduh dokumen pendukung analisis video praktik mengajar berikut ini.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.75rem;">
+            <a href="#" class="btn btn-primary">⬇️ Unduh Video (jika tersedia)</a>
+            <a href="#" class="btn btn-outline">📋 Lembar Observasi Video</a>
+            <a href="#" class="btn btn-outline">📄 Transkrip Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== PREV / NEXT NAV ===== -->
+      <nav class="page-nav" aria-label="Navigasi halaman">
+        <a href="media.html" class="nav-prev">
+          <span>←</span>
+          <span><span class="nav-label">Sebelumnya</span>Analisis Media Pembelajaran</span>
+        </a>
+        <a href="nonmengajar.html" class="nav-next">
+          <span><span class="nav-label">Selanjutnya</span>Analisis Kegiatan Nonmengajar</span>
+          <span>→</span>
+        </a>
+      </nav>
+
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-brand-title">🎓 E-Portofolio PPG</div>
+        <p>Portofolio digital mahasiswa Pendidikan Profesi Guru untuk dokumentasi Praktik Pengalaman Lapangan.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Komponen Utama</h4>
+        <ul>
+          <li><a href="perencanaan.html">Perencanaan Pembelajaran</a></li>
+          <li><a href="materi.html">Materi Pembelajaran</a></li>
+          <li><a href="media.html">Media Pembelajaran</a></li>
+          <li><a href="video.html">Video Praktik Mengajar</a></li>
+          <li><a href="nonmengajar.html">Kegiatan Nonmengajar</a></li>
+          <li><a href="penilaian.html">Instrumen Penilaian</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Informasi</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil Guru</a></li>
+          <li><a href="refleksi.html">Refleksi Diri</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="current-year"></span> E-Portofolio PPG · [ISI: NAMA] · Dibuat dengan ❤️ untuk Program PPG</span>
+      <span>Semester 2 · 2026</span>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Kembali ke atas">↑</button>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
