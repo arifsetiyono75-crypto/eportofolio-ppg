@@ -140,7 +140,7 @@
     }
   });
 
-  console.log('%c E-Portofolio PPG siap! 🎓', 'color:#1A3557;font-weight:bold;font-size:1.1em;');
-  console.log('%c Cari semua placeholder dengan: Ctrl+F → "[ISI"', 'color:#F5A623;font-weight:600;');
+  console.log('%c E-Portofolio PPG siap! 🎓', 'color:#4F8A8B;font-weight:bold;font-size:1.1em;');
+  console.log('%c Cari semua placeholder dengan: Ctrl+F → "[ISI"', 'color:#E8B86D;font-weight:600;');
 
 })();
